@@ -31,7 +31,7 @@ def show():
     gpuFan = "GPU Fan: " + str(Fan1) + " %"
     power = "Power usage: " + str(round(nvmlDeviceGetPowerUsage(handle) / 1000, 1)) + " W"
     utilization = nvmlDeviceGetUtilizationRates(handle)
-    occ = "GPU Occ: " + str(utilization.gpu) + " %"  # gpu利用率
+    occ = "GPU Occ: " + str(utilization.gpu) + " %"
 
     clock = nvmlDeviceGetClockInfo(handle, 0)
     clockR = "Clock: " + str(clock) + " MHz"

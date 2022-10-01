@@ -4,9 +4,7 @@ import pynvml
 root = Tk()
 root.geometry('400x200+50+50')
 root.title("GPU Monitor")
-# 无边框 左上角
-# root.overrideredirect(True)
-# root.iconbitmap("Gpu.ico")
+
 root.attributes("-alpha", 0.8)
 root.attributes("-topmost", True)
 
